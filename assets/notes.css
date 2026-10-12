@@ -1,0 +1,25 @@
+/* Coming-soon page — layered on top of the shared site.css */
+.soon {
+  max-width: 640px;
+  margin: 48px auto;
+  padding: 32px 24px;
+  text-align: center;
+  background: var(--glass);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+.soon h2 {
+  font-family: var(--serif);
+  font-size: clamp(1.6rem, 5vw, 2.2rem);
+  margin: 8px 0 12px;
+}
+.soon p { color: var(--muted); line-height: 1.6; margin: 0 0 24px; }
+.soon-links { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+.soon-links a {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 44px; padding: 0 20px; border-radius: 999px;
+  font-weight: 600; text-decoration: none;
+  border: 1px solid var(--line-strong); color: var(--text);
+}
+.soon-links a.primary { background: var(--teal); border-color: var(--teal); color: var(--on-accent); }
+.soon-links a:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
